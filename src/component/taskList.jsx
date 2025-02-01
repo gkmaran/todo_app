@@ -36,7 +36,7 @@ function TaskList(){
             onChange={() => toggleItem(item.id)}
             />
             <h1 className={item.completed ? styles ['line-through'] : ''}>{item.title}</h1>
-            <button onClick={()=>deleteTask(item.id)} disabled={deleteId === item.id}>{deleteId ===item.id ? 'Deleting..' : 'Delete'}</button>
+            <button className={styles.delbtn} onClick={()=>deleteTask(item.id)} disabled={deleteId === item.id}>{deleteId ===item.id ? 'Deleting..' : 'Delete'}</button>
             {delError && <p>{delError}</p>}
           </div>
         ))}

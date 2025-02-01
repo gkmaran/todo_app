@@ -14,7 +14,7 @@ function TaskForm(){
     }
     return(
         <>
-            <Link to={'/'} className={styles.link}>Home</Link>
+            <Link to={'/'} className={styles.link}><i className="fa-solid fa-house"></i></Link>
             <h2 className={styles.head}>Create Your To-Do List</h2>
             <form className={styles["form-container"]} onSubmit={handleSubmit(onsubmit)}>
                 <input {...register("title", { required: "Input Is Empty" })} type="text" />

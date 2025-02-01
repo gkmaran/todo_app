@@ -64,8 +64,9 @@ input[type="checkbox"] {
   cursor: pointer;
 }
 
-button {
+.delbtn {
   padding: 6px 12px;
+  width: 100px;
   background: #ff4d4d;
   color: white;
   border: none;
@@ -74,11 +75,11 @@ button {
   transition: 0.3s ease;
 }
 
-button:hover {
+.delbtn:hover {
   background: #d43f3f;
 }
 
-button:disabled {
+.delbtn:disabled {
   background: gray;
   cursor: not-allowed;
 }
@@ -93,7 +94,7 @@ button:disabled {
   h1 {
     font-size: 16px;
   }
-  button {
+  .delbtn {
     width: 100%;
     text-align: center;
   }
